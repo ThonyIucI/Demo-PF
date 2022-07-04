@@ -12,7 +12,7 @@ export default function Color() {
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
-      algo
+      algo o nada
       {dark ? <Sun size={18} /> : <MoonStars size={18} />}
     </ActionIcon>
   );
