@@ -1,3 +1,1 @@
-export default function Aer() {
-  return <div>equisde</div>;
-}
+Ojala todo salga bien XD
