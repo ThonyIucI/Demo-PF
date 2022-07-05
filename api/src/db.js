@@ -3,7 +3,7 @@ const { Sequelize } = require('sequelize')
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE } = process.env
 
-const server = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5432/${DB_DATABASE}`, {
+const server = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5432/ecommerce`, {
     logging: false,
     native: false,
   }
