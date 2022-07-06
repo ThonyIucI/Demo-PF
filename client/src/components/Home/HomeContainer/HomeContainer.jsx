@@ -1,4 +1,5 @@
 import { Stack, Navbar, Footer } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 function Demo() {
   return (
@@ -13,6 +14,8 @@ function Demo() {
     >
       <Navbar>
         <h1>SOY EL NAVBAR</h1>
+        <Link to="/edit">Edit Panel</Link>
+        <Link to="/user">User Panel</Link>
       </Navbar>
 
       <h1>SOY EL VARRUSEL</h1>
