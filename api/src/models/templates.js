@@ -1,28 +1,31 @@
 const { DataTypes } = require('sequelize');
 
-module.exports = (sequelize) => {
+const Template = (sequelize)=>{
+  const Model = sequelize.define('template', {
+    id: {
+     type: DataTypes.INTEGER,
+     autoIncrement: true,
+     primaryKey: true
+       },
+   name: {
+     type: DataTypes.STRING,
+   },
+   types: {
+       type: DataTypes.STRING,
+   },
+   image: {
+       type: DataTypes.STRING,
+   },
+   description: {
+       type: DataTypes.TEXT,
+   },
+   rating:{
+       type: DataTypes.DECIMAL,
+   }
+ });
+ return Model
+};
 
-    sequelize.define('template', {
-       id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-          },
-      name: {
-        type: DataTypes.STRING,
-      },
-      types: {
-          type: DataTypes.STRING,
-      },
-      image: {
-          type: DataTypes.STRING,
-      },
-      description: {
-          type: DataTypes.TEXT,
-      },
-      rating:{
-          type: DataTypes.DECIMAL,
-      }
-    });
-  };
-  
+module.exports = Template
+
+
