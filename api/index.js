@@ -1,5 +1,11 @@
-const { server } = require('./src/db.js')
+require('dotenv').config()
+const app = require('./src/app.js')
+const { sequelize } = require('./src/db.js')
 
-server.authenticate().then(() => {
-    console.log('Server started')
-}) 
+const { APP_PORT } = process.env
+
+sequelize.sync({force: true}).then(() => {
+    app.listen(APP_PORT, () => {
+        console.log(`Server started port ${APP_PORT}`)
+    })    
+})
