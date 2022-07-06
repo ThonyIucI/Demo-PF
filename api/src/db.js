@@ -14,5 +14,6 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:543
 const modelTemplate = Template(sequelize)
 
 module.exports = {
-  sequelize
+  sequelize,
+  modelTemplate
 }

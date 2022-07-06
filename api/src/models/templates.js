@@ -2,25 +2,25 @@ const { DataTypes } = require('sequelize');
 
 const Template = (sequelize)=>{
   const Model = sequelize.define('template', {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true
-    },
     name: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
-    types: {
-        type: DataTypes.STRING,
+    skin: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
     image: {
-        type: DataTypes.STRING,
+      type: DataTypes.STRING,
+      allowNull: false
     },
     description: {
-        type: DataTypes.TEXT,
+      type: DataTypes.TEXT,
+      allowNull: false
     },
     rating:{
-        type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL,
     }
   });
 
