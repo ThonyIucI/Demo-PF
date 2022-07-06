@@ -1,12 +1,8 @@
 import React from "react";
-import Color from "./Components/Color";
-import Home from "./Components/Home";
+import Home from "./components/Home/HomeContainer/HomeContainer";
 
 function App() {
-  return (
-    <Home />
-    // <Color />
-  );
+  return <Home />;
 }
 
 export default App;
