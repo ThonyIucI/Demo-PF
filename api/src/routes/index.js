@@ -1,6 +1,6 @@
 const { Router } = require('express')
 
-const modelTemplate = require('../db.js')
+const { modelTemplate } = require('../db.js')
 
 const routes = Router()
 
@@ -15,7 +15,7 @@ const getTemplates = async (req, res) => {
 
 const createTemplate = async (req, res) => {
     const { name, skin, image, description, rating } = req.body
-
+        console.log(req.body)
     try {
         const template = await modelTemplate.create({
             name,
