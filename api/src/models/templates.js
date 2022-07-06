@@ -22,7 +22,9 @@ const Template = (sequelize)=>{
     rating:{
       type: DataTypes.DECIMAL,
     }
-  });
+  },{ createdAt:false, updatedAt:false});
+
+
 
   return Model
 };
