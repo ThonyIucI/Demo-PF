@@ -1,4 +1,5 @@
 require('dotenv').config()
+const { lock } = require('./src/app.js')
 const app = require('./src/app.js')
 const { sequelize } = require('./src/db.js')
 
@@ -9,3 +10,6 @@ sequelize.sync({force: false}).then(() => {
         console.log(`Server started port ${APP_PORT}!`)
     })    
 })
+
+//github -> delete package-lock.json backend or main
+
