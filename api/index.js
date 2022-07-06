@@ -6,6 +6,6 @@ const { APP_PORT } = process.env
 
 sequelize.sync({force: false}).then(() => {
     app.listen(APP_PORT, () => {
-        console.log(`Server started port ${APP_PORT}`)
+        console.log(`Server started port ${APP_PORT}!`)
     })    
 })
