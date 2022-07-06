@@ -10,6 +10,8 @@ import {
   Burger,
   useMantineTheme,
 } from "@mantine/core";
+import { Link } from "react-router-dom";
+import NavBarUser from "./NavBarUser/Pages/Settings/Help/CloseSesion/NavBarUSer";
 
 export default function USerPanel() {
   const theme = useMantineTheme();
@@ -27,16 +29,8 @@ export default function USerPanel() {
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
       fixed
-      navbar={
-        <Navbar
-          p="md"
-          hiddenBreakpoint="sm"
-          hidden={!opened}
-          width={{ sm: 200, lg: 300 }}
-        >
-          <Text>Application navbar</Text>
-        </Navbar>
-      }
+      navbar={<NavBarUser opened={opened}/>
+        }
       aside={
         <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
           <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
