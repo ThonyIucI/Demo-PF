@@ -1,3 +1,3 @@
 export default function Home() {
-  return <>Soy el Home XD haz algoo</>;
+  return <>Soy el Home XD haz algoooo</>;
 }
