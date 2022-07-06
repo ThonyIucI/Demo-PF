@@ -1,6 +1,6 @@
 const { Router } = require('express')
 
-const modelTemplate = require('../db.js')
+const { modelTemplate } = require('../db.js')
 
 const routes = Router()
 
