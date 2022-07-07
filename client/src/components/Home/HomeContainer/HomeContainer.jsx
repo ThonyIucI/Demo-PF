@@ -13,9 +13,9 @@ function Demo() {
       })}
     >
       <Navbar>
-        <h1>SOY EL NAVBAR</h1>
-        <Link to="/edit">Edit Panel</Link>
         <Link to="/user">User Panel</Link>
+        <Link to="/edit">Edit Panel</Link>
+        <h1>SOY EL NAVBAR</h1>
       </Navbar>
 
       <h1>SOY EL VARRUSEL</h1>
